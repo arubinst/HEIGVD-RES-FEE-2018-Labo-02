@@ -97,7 +97,7 @@ Command | Processing done by the server       | Response
 
 Command | Processing done by the server       | Response               
 :---:|--------|---
-`LOAD`    | No change in the processing. | `{"status":"success","numberOfNewStudents":3}`, where 3 is the number of student lines sent by the client.
+`LOAD`    | No change in the processing. | `{"status":"success","numberOfNewStudents":3}`, where 3 is the number of student lines sent by the client. This is sent instead of the old `DATA LOADED`.
 `BYE`    | No change in the processing. | `{"status":"success","numberOfCommands":12}`, where 12 is the number of commands sent by the client during the session.
 `INFO`    | No change in the processing. | `{"protocolVersion":"2.0","numberOfStudents":3}`, where `3` is the number of students currently in the server data store.
 
